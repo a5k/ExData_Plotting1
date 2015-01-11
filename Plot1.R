@@ -3,7 +3,6 @@ rm(list = ls(all=T))
 
 ## first read the entire dataset. wee aren't focusing 
 ##on execution efficiency at this point 
-
 data <-read.table("./../../household_power_consumption.txt", 
                   header = TRUE, sep = ";", 
                   colClasses = NA, na.strings = "?")
