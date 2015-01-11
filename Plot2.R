@@ -1,3 +1,4 @@
+##updated 1/10/15
 ## basic set up clear all existing variables 
 rm(list = ls(all=T))
 
