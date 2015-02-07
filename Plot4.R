@@ -1,11 +1,8 @@
-##Updated 1/10/15
-## basic set up clear all existing variables 
-rm(list = ls(all=T))
-
+##Updated 2/7/15
 ## first read the entire dataset. wee aren't focusing 
 ##on execution efficiency at this point 
 
-data <-read.table("./../../household_power_consumption.txt", 
+data <-read.table("./../household_power_consumption.txt", 
                   header = TRUE, sep = ";", 
                   colClasses = NA, na.strings = "?")
 
@@ -42,7 +39,7 @@ with(data, plot(datetime, Voltage,
 ##create the third plot
 {with(data, plot(datetime, Sub_metering_1, 
                 type = "l", xlab = "", 
-                ylab = "Enery sub metering", 
+                ylab = "Energy sub metering", 
                 col = "black"))
 ## add the two other lines to this plot
 lines(data$datetime, data$Sub_metering_2, type = "l", col = "red")

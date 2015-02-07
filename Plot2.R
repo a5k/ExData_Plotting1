@@ -1,11 +1,8 @@
-##updated 1/10/15
-## basic set up clear all existing variables 
-rm(list = ls(all=T))
-
+##updated 2/7/15
 ## first read the entire dataset. wee aren't focusing 
 ##on execution efficiency at this point 
 
-data <-read.table("./../../household_power_consumption.txt", 
+data <-read.table("./../household_power_consumption.txt", 
                   header = TRUE, sep = ";", 
                   colClasses = NA, na.strings = "?")
 
